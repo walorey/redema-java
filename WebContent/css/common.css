@@ -1,0 +1,26 @@
+.listacirculo {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.listacirculo:after,
+.circuloservicios:before {
+	content: '';
+    display: table;
+}
+
+.listacirculo:after {
+	clear: both;
+}
+
+.listacirculo li {
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	margin: 10px;
+}
+

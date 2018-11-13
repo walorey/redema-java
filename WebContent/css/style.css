@@ -1,0 +1,90 @@
+.circuloservicios {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	cursor: default;
+	box-shadow: 
+		inset 0 0 0 5px rgba(255,255,255,0.6),
+		0 1px 2px rgba(0,0,0,0.1);
+		
+	-webkit-transition: all 0.9s ease-in-out;
+	-moz-transition: all 0.9s ease-in-out;
+	-o-transition: all 0.9s ease-in-out;
+	-ms-transition: all 0.9s ease-in-out;
+	transition: all 0.9s ease-in-out;
+}
+
+.cirimg1 { 
+	background-image: url(../images/1.jpg);
+}
+
+.cirimg2 { 
+	background-image: url(../images/2.jpg);
+}
+
+.cirimg3 { 
+	background-image: url(../images/3.jpg);
+}
+
+.cirimg4{
+	background-image: 
+}
+
+.cirinfo {
+	position: absolute;
+	background-color: #f44336!important;
+	width: inherit;
+	height: inherit;
+	border-radius: 50%;
+	opacity: 0;
+	
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	
+	-webkit-backface-visibility: hidden;
+
+}
+
+.cirinfo h4 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 15px;
+	margin: 0 30px;
+	padding: 15px 0 0 0;
+	height: 10px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+
+
+.circuloservicios:hover {
+	box-shadow: 
+		inset 0 0 0 1px rgba(255,255,255,0.1),
+		0 1px 2px rgba(0,0,0,0.1);
+}
+.circuloservicios:hover .cirinfo {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+
+.circuloservicios:hover .cirinfo p {
+	opacity: 1;
+}
